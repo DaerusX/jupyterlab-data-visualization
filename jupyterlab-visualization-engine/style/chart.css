@@ -1,0 +1,41 @@
+.chart {
+  width: 300px;
+  height: 100px;
+}
+
+.chart-wrapper {
+  overflow-y: hidden;
+  text-align: left;
+  width: 350px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-string-bar {
+  width: 300px;
+  height: 120px;
+}
+
+.xaxis {
+  width: 300px;
+  height: 25px;
+}
+
+.tooltip {
+  background-color: #616161;
+  opacity: 0;
+  color: white;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  position: absolute;
+  text-align: center;
+  padding: 6px;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 1;
+  margin-left: 50px;
+  white-space: pre;
+  top: 0;
+}

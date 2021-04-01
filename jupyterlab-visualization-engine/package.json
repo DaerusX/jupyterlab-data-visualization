@@ -1,0 +1,59 @@
+{
+  "name": "mimerender_data_validator",
+  "version": "0.1.01",
+  "description": "A JupyterLab extension for rendering facets files.",
+  "author": "daiyan <no>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "jupyterlab": {
+    "mimeExtension": true
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w",
+    "extension:install": "jupyter labextension install mimerender_data_validator",
+    "extension:uninstall": "jupyter labextension uninstall  mimerender_data_validator",
+    "extension:enable": "jupyter labextension enable mimerender_data_validator",
+    "extension:disable": "jupyter labextension disable mimerender_data_validator"
+  },
+  "dependencies": {
+    "@jupyterlab/apputils": "^2.0.0",
+    "@jupyterlab/rendermime-interfaces": "^2.0.0",
+    "@lumino/widgets": "^1.5.0",
+    "@types/d3": "^6.2.0",
+    "@types/d3-array": "^2.8.0",
+    "@types/d3-scale": "^3.2.2",
+    "@types/google-protobuf": "^3.7.4",
+    "@types/react-dom": "^17.0.0",
+    "antd": "^4.12.3",
+    "d3": "^6.3.1",
+    "d3-array": "^2.9.1",
+    "d3-scale": "^3.2.3",
+    "google-protobuf": "^3.14.0",
+    "long": "latest",
+    "moment": "^2.24.0",
+    "plottable": "^3.9.0",
+    "protobufjs": "latest",
+    "rc-table": "^7.12.3",
+    "react": "^16.9.0",
+    "react-dom": "~16.9.0"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.3",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.20.1",
+    "typescript": "^4.2.2"
+  }
+}
