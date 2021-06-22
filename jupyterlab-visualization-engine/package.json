@@ -1,8 +1,8 @@
 {
-  "name": "mimerender_data_validator",
-  "version": "0.1.01",
+  "name": "mimerender_data_visualization",
+  "version": "0.1.02",
   "description": "A JupyterLab extension for rendering facets files.",
-  "author": "daiyan <no>",
+  "author": "daiyan",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "style": "style/index.css",
